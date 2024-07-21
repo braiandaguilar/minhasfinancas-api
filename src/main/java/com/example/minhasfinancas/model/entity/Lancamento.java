@@ -19,13 +19,17 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.example.minhasfinancas.model.enums.StatusLancamento;
 import com.example.minhasfinancas.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "lancamento", schema="financas")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
 	
 	
